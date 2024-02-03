@@ -125,7 +125,7 @@ async def main():
         collection_name,
         "Alice's simple token",
         token_name,
-        "https://aptos.dev/img/nyan.jpeg",
+        "https://raw.githubusercontent.com/realTaki/Aptos-hack-round-1/main/NFT/ikun.png",
         PropertyMap([]),
     )  # <:!:section_5
     await rest_client.wait_for_transaction(txn_hash)
