@@ -1,9 +1,22 @@
+import React, { useEffect, useState } from "react";
+
 import "@aptos-labs/wallet-adapter-ant-design/dist/index.css";
 
 import { WalletSelector } from "@aptos-labs/wallet-adapter-ant-design";
-import { Layout, Row, Col, Button, Spin, List, Checkbox, Input, Card, Image } from "antd";
+import {
+  Layout,
+  Row,
+  Col,
+  Button,
+  Spin,
+  List,
+  Checkbox,
+  Input,
+  Card,
+  Image,
+} from "antd";
 
-import React, { useEffect, useState } from "react";
+
 import {
   useWallet,
   InputTransactionData,
@@ -22,16 +35,15 @@ type Idol = {
   address: string;
 };
 
-
 function App() {
-  const {account, signAndSubmitTransaction } = useWallet();
+  const { account, signAndSubmitTransaction } = useWallet();
   const [transactionInProgress, setTransactionInProgress] =
     useState<boolean>(false);
-  const collectionAddress = "0xaa93b9da1e3ca3bae689040ee8c0b7c1dee4c82c5ee4e350c74195bc267b85cb";
+  const collectionAddress =
+    "0xaa93b9da1e3ca3bae689040ee8c0b7c1dee4c82c5ee4e350c74195bc267b85cb";
   const [idols, setIdols] = useState<Idol[]>([]);
 
-
-  const fetchIdolList = async() => {
+  const fetchIdolList = async () => {
     if (!account) return [];
     const rsps = await aptos.getAccountOwnedTokensFromCollectionAddress({
       accountAddress: account?.address,
@@ -58,7 +70,7 @@ function App() {
   //     recipient: recipient,
   //     memo: "transfer idol",
   //   };
-  
+
   //   signAndSubmitTransaction(transaction);
   // }
 
@@ -78,7 +90,7 @@ function App() {
           </Col>
         </Row>
       </Layout>
-        {/* <Row align="middle">
+      <Row align="middle">
           <Card title="My Idol List" style={{ width: 300 }}>
             <List
               itemLayout="horizontal"
@@ -97,7 +109,7 @@ function App() {
               )}
             />
           </Card>
-        </Row> */}
+        </Row>
     </>
   );
 }
