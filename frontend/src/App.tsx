@@ -8,14 +8,13 @@ import {
   Row,
   Col,
   Button,
-  Spin,
   List,
-  Checkbox,
   Input,
   Card,
   Image,
+  Modal,
+  message,
 } from "antd";
-
 
 import {
   useWallet,
@@ -25,6 +24,7 @@ import {
 import "@aptos-labs/wallet-adapter-ant-design/dist/index.css";
 import { CheckboxChangeEvent } from "antd/es/checkbox";
 import { Aptos } from "@aptos-labs/ts-sdk";
+import ChatWindow from "./Chat";
 
 const aptos = new Aptos();
 
@@ -35,10 +35,10 @@ type Idol = {
   address: string;
 };
 
-function App() {
-  const { account, signAndSubmitTransaction } = useWallet();
-  const [transactionInProgress, setTransactionInProgress] =
-    useState<boolean>(false);
+function Idol() {
+  const { account, signMessage } = useWallet();
+  const [isChatWindowVisible, setChatWindowVisible] = useState(false);
+
   const collectionAddress =
     "0xaa93b9da1e3ca3bae689040ee8c0b7c1dee4c82c5ee4e350c74195bc267b85cb";
   const [idols, setIdols] = useState<Idol[]>([]);
@@ -63,16 +63,20 @@ function App() {
     console.log(idols);
   };
 
-  // const transferIdol = async (idol: Idol, recipient: string) => {
-  //   const transaction = {
-  //     collectionAddress: collectionAddress,
-  //     tokenId: idol.address,
-  //     recipient: recipient,
-  //     memo: "transfer idol",
-  //   };
+  const signNFT = async (idol: Idol) => {
+    if (!account) return;
+    const message = `${idol.name}`;
+    const signature = await signMessage({ nonce: "1234034", message });
+    console.log(signature);
+  };
 
-  //   signAndSubmitTransaction(transaction);
-  // }
+  const handleChatButtonClick = (idol: Idol) => {
+    setChatWindowVisible(true);
+  };
+
+  const handleChatWindowClose = () => {
+    setChatWindowVisible(false);
+  };
 
   useEffect(() => {
     fetchIdolList();
@@ -91,27 +95,44 @@ function App() {
         </Row>
       </Layout>
       <Row align="middle">
-          <Card title="My Idol List" style={{ width: 300 }}>
-            <List
-              itemLayout="horizontal"
-              dataSource={idols}
-              renderItem={(item) => (
-                <List.Item>
-                  <List.Item.Meta
-                    title={item.name}
-                    description={item.description}
-                  />
-                  <Image
-                    width={100}
-                    src={item.uri}
-                  />
-                </List.Item>
-              )}
-            />
-          </Card>
-        </Row>
+        <List
+          itemLayout="horizontal"
+          dataSource={idols}
+          renderItem={(item) => (
+            <List.Item>
+              <Card
+                style={{
+                  width: 300,
+                }}
+                cover={<Image width="100%" src={item.uri} />}
+                actions={[
+                  <Button onClick={() => handleChatButtonClick(item)}>
+                    Chat
+                  </Button>,
+                  <Button onClick={() => signNFT(item)}>Edit</Button>,
+                  <Button onClick={() => signNFT(item)}>transfer</Button>,
+                ]}
+                title="My Idol List"
+              >
+                <List.Item.Meta
+                  title={item.name}
+                  description={item.description}
+                />
+              </Card>
+            </List.Item>
+          )}
+        />
+        <Modal
+          title="Chat with Support"
+          visible={isChatWindowVisible}
+          onCancel={handleChatWindowClose}
+          footer={null}
+        >
+          <ChatWindow onClose={handleChatWindowClose} />
+        </Modal>
+      </Row>
     </>
   );
 }
 
-export default App;
+export default Idol;
