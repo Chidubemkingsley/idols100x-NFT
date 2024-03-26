@@ -9,11 +9,9 @@ import {
   Col,
   Button,
   List,
-  Input,
   Card,
   Image,
   Modal,
-  message,
 } from "antd";
 
 import {
@@ -109,7 +107,11 @@ function Idol() {
                   <Button onClick={() => handleChatButtonClick(item)}>
                     Chat
                   </Button>,
-                  <Button onClick={() => signNFT(item)}>Edit</Button>,
+           
+                  <Button onClick={() => signNFT(item)}><a href="https://app.embedbase.xyz/dashboard/explorer/ikun" target="_blank" rel="noopener noreferrer">
+                  Edit
+                </a></Button>,
+                 
                   <Button onClick={() => signNFT(item)}>transfer</Button>,
                 ]}
                 title="My Idol List"

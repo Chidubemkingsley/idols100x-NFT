@@ -16,6 +16,10 @@ const ChatWindow = ({ onClose }: { onClose: () => void }) => {
   const handleMessageSend = async (msg: string) => {
 
     try {
+      setMessageInput("");
+      messages.push({ role: "user", content: msg });
+      setChatHistory(messages);
+      
       const response = await fetch("http://127.0.0.1:8000/chat", {
         method: "POST",
         headers: {
@@ -26,10 +30,10 @@ const ChatWindow = ({ onClose }: { onClose: () => void }) => {
 
       const data = await response.json();
       // 这里可以发送消息给后端，这里是一个示例
-      messages.push({ role: "user", content: msg });
+      
       messages.push({ role: "ikun", content: data.answer });
       setChatHistory(messages);
-      setMessageInput("");
+      
     } catch (error) {
       console.error("Error:", error);
     }
