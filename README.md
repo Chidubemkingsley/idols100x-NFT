@@ -1,5 +1,7 @@
 # Idols 100x AI-NFT
 
+[Pitch Deck](https://docs.google.com/presentation/d/17NzD9-55hrW1U0HydiHcY15WRp3mJl_b/edit?usp=sharing&ouid=114845233525044351428&rtpof=true&sd=true) | [X](https://x.com/idols100x)
+
 An AIaaNFT project that uses NFT to tokenize Web2 AI services and APIs including ChatGPT and VectorDB.
 
 ## What it does
