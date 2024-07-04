@@ -1,10 +1,12 @@
 # Idols 100x AI-NFT
 
-[Pitch Deck](https://docs.google.com/presentation/d/17NzD9-55hrW1U0HydiHcY15WRp3mJl_b/edit?usp=sharing&ouid=114845233525044351428&rtpof=true&sd=true) | [X](https://x.com/idols100x)
+
+[GitHub](https://github.com/HashCloudHK/idols100x-NFT) | [X](https://x.com/idols100x) ｜ [Pitch Deck](https://docs.google.com/presentation/d/17NzD9-55hrW1U0HydiHcY15WRp3mJl_b/edit?usp=sharing&ouid=114845233525044351428&rtpof=true&sd=true)
 
 An AIaaNFT project that uses NFT to tokenize Web2 AI services and APIs including ChatGPT and VectorDB.
 
 ## What it does
+
 
 Idols-100x is an NFT-based virtual idol project. 
 
@@ -15,6 +17,7 @@ We made the virtual idols NFTs that can be customized and traded at will.
 Through fair market competition, creators can benefit from making better chatbots and trading them, eventually professionalizing the virtual idol economy market.
 
 ## The problem it solves
+
 
 Currently, there are many ChatBots in the Web2 field. The classic idea is that users can train the robots themselves, or officially set them up to provide services to the users. 
 
@@ -36,8 +39,8 @@ In fact, the idol agent team mechanism in the real world has provided a good ide
 3. Users will have a huge selection of virtual idols to choose from, and agents will receive incentives as creators. NFT make the transfer of virtual idols smooth, and the FT key allows loyal users to benefit from the growth of virtual idols.
 
 
-
 ## Technologies we used
+
 
 NFT, FriendsTech Key, VectorDB, ChatGPT - AIaaNFT
 
@@ -50,6 +53,7 @@ ChatGPT is used to generate the dialogues of the virtual idols followed by the i
 
 ## How we built it
 
+
 Players can participate as fans or agents:
 
 Fans purchase the FT Key of a virtual idol to obtain chat with their idols; 
@@ -61,15 +65,22 @@ Highly customizable and tradable are the characteristics of this project.
 
 ## Special Thanks
 
-* Tanks to [Aptos Hack Chinese](https://twitter.com/aptoscnofficial/status/1785040852273844290) for the opportunity to participate in the hackathon and get a Participation Award.
-* Thanks to [Aptos JP](https://x.com/aptos_japan/status/1788010715976184012) and [Akindo](https://x.com/akindo_io/status/1789148117193154923) for the grant of the 5th Wave of the @Aptos WaveHack program
+
+* Tanks to [Aptos Hack Chinese](https://twitter.com/aptoscnofficial/status/1785040852273844290) for the opportunity to participate in the hackathon and get a Participation Award.  
+* Thanks to [Aptos JP](https://x.com/aptos_japan/status/1788010715976184012) and [Akindo](https://x.com/akindo_io/status/1789148117193154923) for the grant of the 5th Wave of the @Aptos WaveHack program.  
+
 
 ## Keep looking for us
+
 
 Follow our on [X](https://x.com/idols100x).
 
 
+
 ## What's next for
 
+
 Continue to build this game!
+
+
 
