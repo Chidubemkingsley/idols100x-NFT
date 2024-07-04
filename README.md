@@ -8,7 +8,7 @@ Idols-100x is an NFT-based virtual idol project.
 
 Essentially we implemented AIaaNFT, using NFT to tokenize Web2 AI services and APIs such as ChatGPT and VectorDB.
 
-We made the virtual idols be a NFTs that can be customized and traded at will. 
+We made the virtual idols NFTs that can be customized and traded at will. 
 
 Through fair market competition, creators can benefit from making better chatbots and trading them, eventually professionalizing the virtual idol economy market.
 
@@ -25,13 +25,13 @@ There are several shortcomings here:
 3. There is no financial reward for excellent chatbot creators, and there is a lack of a trading market for chatbot production.
 
 
-In fact, the idol agent team mechanism in the real world has provided a good idea, that is, idols are generated through economic market competition. And of course it can also be an vitual idol chatbot:
+In fact, the idol agent team mechanism in the real world has provided a good idea, that is, idols are generated through economic market competition. And of course, it can also be a virtual idol chatbot:
 
-1. It is operated by an agent which is a professional team that does the character design, story telling, and organizing vitual idol activities. As creators, they are more dynamic than a single company providing all the chatbots and more professional than individual training.
+1. It is operated by an agent which is a professional team that does the character design, storytelling, and organizing virtual idol activities. As creators, they are more dynamic than a single company providing all the chatbots and more professional than individual training.
 
-2. Vitual idols can be traded before and after they are trained as NFTs, so agents have the motivation to buy the low quility vitual idols which is cheaper, train them well to raising the price and make profit from them.
+2. Virtual idols can be traded before and after they are trained as NFTs, so agents have the motivation to buy low-quality virtual idols which are cheaper, train them well to raise the price and make a profit from them.
 
-3. Users will have a huge selection of vitual idols to choose from, agents will receive incentives as creators. NFT make the transfer of virtual idols smooth, and the FT key allows loyal users to benefit from the growth of vitual idols.
+3. Users will have a huge selection of virtual idols to choose from, and agents will receive incentives as creators. NFT make the transfer of virtual idols smooth, and the FT key allows loyal users to benefit from the growth of virtual idols.
 
 
 
@@ -39,11 +39,11 @@ In fact, the idol agent team mechanism in the real world has provided a good ide
 
 NFT, FriendsTech Key, VectorDB, ChatGPT - AIaaNFT
 
-NFT is used to tokenize the virtual idols, and the FT Key is used as the access key to the virtual idol chatbot service.
+NFT is used to tokenize the virtual idols and the FT Key is used as the access key to the virtual idol chatbot service.
 
-VectorDB is used to store the virtual idol's story data, which make the virtual idol full, with a complete history and life experience, so they are able to be more real and expandable.
+VectorDB is used to store the virtual idol's story data, which makes the virtual idol full, with a complete history and life experience, so they are able to be more real and expandable.
 
-ChatGPT is used to generate the dialogues of the virtual idols following by the idols' experince, story and charactar, which make the virtual idol more interactive and interesting.
+ChatGPT is used to generate the dialogues of the virtual idols followed by the idols' experience, story and character, which makes the virtual idol more interactive and interesting.
 
 
 ## How we built it
