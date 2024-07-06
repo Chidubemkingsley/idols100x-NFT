@@ -76,6 +76,21 @@ Highly customizable and tradable are the characteristics of this project.
 Follow our on [X](https://x.com/idols100x).
 
 
+## Testnet deployment progress
+
+We will deploy on all blockchains testnet that provide funding, as long as the technology stack allows (Solidity or Move).
+
+MOVE:
+
+[x] Aptos
+
+Solidity:
+
+[ ] Berachain
+[ ] ZetaChain Universal EVM
+[ ] Xenea CROSSVALUE Chain
+[ ] ZKSync
+[ ] Manta Pacific
 
 ## What's next for
 
